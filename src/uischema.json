@@ -1,0 +1,120 @@
+{
+  "type": "Categorization",
+  "elements": [
+    {
+      "type": "Category",
+      "label": "Basic Information",
+      "elements": [
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/basicInfo/properties/firstName"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/basicInfo/properties/lastName"
+            }
+          ]
+        },
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/basicInfo/properties/suffix"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/basicInfo/properties/sex"
+            }
+          ]
+        },
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/basicInfo/properties/birthDate"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/basicInfo/properties/nationality"
+            }
+          ]
+        },
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/address/properties/street"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/address/properties/streetNumber"
+            }
+          ]
+        },
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/address/properties/city"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/address/properties/postalCode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Category",
+      "label": "Emergency Contact",
+      "elements": [
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/emergency/properties/firstName"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/emergency/properties/lastName"
+            }
+          ]
+        },
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/emergency/properties/email"
+            },
+            {
+              "type": "Control",
+              "scope": "#/properties/emergency/properties/contact"
+            }
+          ]
+        },
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            {
+              "type": "Control",
+              "scope": "#/properties/emergency/properties/relationshipToContact"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "options": {
+    "variant": "stepper"
+  }
+}

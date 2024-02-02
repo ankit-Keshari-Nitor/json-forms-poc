@@ -1,0 +1,76 @@
+{
+  "type": "object",
+  "properties": {
+    "basicInfo": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string",
+          "minLength": 3,
+          "description": "Please enter your first name"
+        },
+        "lastName": {
+          "type": "string",
+          "minLength": 3,
+          "description": "Please enter your last name"
+        },
+        "suffix": {
+          "type": "string",
+          "enum": ["Mr.", "Mrs.", "Other"]
+        },
+        "sex": {
+          "type": "string",
+          "enum": ["Male", "Female", "Other"]
+        },
+        "birthDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Please enter your birth date."
+        },
+        "nationality": {
+          "type": "string",
+          "enum": ["IND", "NZ", "UK", "US", "AUS", "Other"]
+        }
+      }
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "street": {
+          "type": "string"
+        },
+        "streetNumber": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "postalCode": {
+          "type": "string",
+          "maxLength": 6
+        }
+      }
+    },
+    "emergency": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "relationshipToContact": {
+          "type": "string",
+          "enum": ["Father", "Mother", "Brother", "Spouse", "Husband"]
+        },
+        "contact": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
